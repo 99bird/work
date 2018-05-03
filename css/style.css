@@ -1,0 +1,107 @@
+div,body{
+    margin: 0px;
+    padding: 0px;
+}
+.container{
+    width: 100%;
+    height: 100%;
+}
+.header{
+    width: 100%;
+    height: 50px;
+}
+.fun{
+    width: 100%;
+    height: 70px;
+    background-color: #FFC000 ;
+}
+.btn_add{
+    background-color: #FFE697;
+    height: 40px;
+}
+.inner_container{
+    float: left;
+    padding-left: 70px;
+}
+
+.inner_container>div{
+    margin: 20px;
+    width: 16%;
+    height: 500px;
+    border: thin black solid;
+    float: left;
+}
+.fun_add{
+    display: none;
+    width: 280px;
+    height: 280px;
+    background-color: white;
+}
+.fun>.btn_add{
+    margin-left: 25px;
+    margin-top: 15px;
+}
+.ipt_words{
+    float: right;
+    margin-top: 22px;
+    margin-right: 30px;
+ }
+.fun>.ipt_select{
+    margin-left: 70%;
+}
+.mon>span,.thu>span,.wed>span,.tue>span,.fri>span{
+    font-size: 20px;
+    margin: 50px 50px 50px 50px;
+    padding: 0px auto;
+    font-family: 方正兰亭超细黑简体;
+}
+
+/*
+这是添加事情的二级弹窗的样式
+ */
+.add_dia .add_table{
+    border: 0px;
+    width: 270px;
+}
+.add_dia .btn_close{
+    width: 30px;
+}
+.add_dia .ipt_select{
+    width: 238px;
+    height: 25px;
+}
+.add_dia .ipt_text{
+    width: 235px;
+    height: 20px;
+}
+.add_dia .btn_add,.btn_close{
+    margin-right: 25px;
+    display: block;
+    float: right;
+}
+.add_dia .add_textarea{
+    width: 235px;
+    height: 120px;
+}
+
+/*
+这是查看或修改信息的二级窗口样式表
+ */
+.detail_dia .det_tab{
+    width: 100%;
+    height: 100%;
+}
+.detail_dia .det_teta{
+    height: 100px;
+}
+.detail_dia .det_clo{
+    float: right;
+    width: 20px;
+}
+.done_btn{
+    margin-left: 136px;
+}
+.detail_dia .det_ipn,.det_ipt,.det_sel,.det_teta{
+    width: 280px;
+}
+

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>TO DO List</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <script type="text/javascript" src="js/controll.js" defer="defer"></script>
+</head>
+<body>
+<div class="container">
+    <div class="header"></div>
+    <div class="fun">
+        <input class="btn_add" type="button" value="Add ToDO" alt="" onclick="dialog()">
+        <select class="ipt_select" alt="">
+
+            <option value="Monday">Monday</option>
+            <option value="Tuesday">Tuesday</option>
+            <option value="Wednesday">Wednesday</option>
+            <option value="Thursday">Thursday</option>
+            <option value="Friday">Friday</option>
+        </select>
+        <input id="search" class="ipt_words" alt="" type="text" placeholder="Enter key words">
+    </div>
+
+    <!--
+        这是二级添加窗口
+        -->
+    <dialog id="add_dialog" class="add_dia">
+        <table class="add_table">
+            <tr>
+                <td><input class="btn_close" type="image" alt="" src="images/close.PNG" onclick="clos()"></td>
+            </tr>
+            <tr>
+                <td>
+                    <select class="ipt_select" id="sel">
+                        <option value="Monday">Monday</option>
+                        <option value="Tuesday">Tuesday</option>
+                        <option value="Wednesday">Wednesday</option>
+                        <option value="Thursday">Thursday</option>
+                        <option value="Friday">Friday</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input class="ipt_text" id="ipt" type="text" placeholder="Title">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <textarea id="teta" placeholder="Contents" class="add_textarea"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input class="btn_add" alt="" type="image" src="images/add.PNG"
+                           onclick="get();judgeDiv();createEle();addStyle();addValue();insert();addMyEvent();clos();"/>
+                </td>
+            </tr>
+        </table>
+    </dialog>
+
+    <!--
+        这是查看或修改信息的二级窗口
+    -->
+    <dialog id="detail_dialog" class="detail_dia">
+        <table class="det_tab">
+            <tr>
+                <td><input type="image" src="images/close.PNG" alt="" class="det_clo" onclick="clo_detail()"></td>
+            </tr>
+            <tr>
+                <td>
+                    <select id="detail_sel" class="det_sel">
+                        <option value="Monday">Monday</option>
+                        <option value="Tuesday">Tuesday</option>
+                        <option value="Wednesday">Wednesday</option>
+                        <option value="Thursday">Thursday</option>
+                        <option value="Friday">Friday</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><input type="number" id="detail_iptn" class="det_ipn"></td>
+            </tr>
+            <tr>
+                <td><input type="text" id="detail_iptt" class="det_ipt"></td>
+            </tr>
+            <tr>
+                <td><textarea class="det_teta" id="detail_teta"></textarea></td>
+            </tr>
+            <tr>
+                <td><input class="done_btn" type="image" alt="" src="images/done.PNG" onclick="modify();clo_detail()"></td>
+            </tr>
+
+        </table>
+    </dialog>
+
+
+    <!--
+    下面这是显示每个星期的框架
+    -->
+    <div class="inner_container">
+        <div class="mon" id="mon">
+            <span>Monday</span>
+
+        </div>
+        <div class="tue" id="tue">
+            <span>Tuesday</span>
+
+        </div>
+        <div class="wed" id="wed">
+            <span>Wednesday</span>
+
+        </div>
+        <div class="thu" id="thu">
+            <span>Thursday</span>
+
+        </div>
+        <div class="fri" id="fri">
+            <span>Friday</span>
+
+        </div>
+    </div>
+</div>
+</body>
+</html>

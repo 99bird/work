@@ -1,0 +1,14 @@
+.det_tab{
+    width: 100%;
+    height: 100%;
+}
+.det_teta{
+    height: 100px;
+}
+.det_clo{
+    float: right;
+    width: 20px;
+}
+.det_ipn,.det_ipt,.det_sel,.det_teta{
+    width: 280px;
+}
