@@ -1,2 +1,2 @@
 homework
-![](https://github.com/pogx/images-all/work/hs.jpg)
+![](https://github.com/pogx/images-all/raw/master/work/hs.jpg)
